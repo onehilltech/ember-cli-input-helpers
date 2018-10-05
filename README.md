@@ -1,5 +1,7 @@
 # ember-cli-input-helpers
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/onehilltech/ember-cli-input-helpers.svg)](https://greenkeeper.io/)
+
 Helper functions for binding HTML input elements to properties.
 
 ## Installation
