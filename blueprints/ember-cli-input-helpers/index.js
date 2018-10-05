@@ -15,15 +15,12 @@
  *
  */
 
-import EmberRouter from '@ember/routing/router';
-import config from './config/environment';
+/* eslint-env node */
 
-const Router = EmberRouter.extend({
-  location: config.locationType,
-  rootURL: config.rootURL
+const { Blueprint } = require ('ember-cli-blueprint-helpers');
+
+module.exports = Blueprint.extend ({
+  addons: [
+    {name: 'ember-moment'}
+  ]
 });
-
-Router.map(function() {
-});
-
-export default Router;

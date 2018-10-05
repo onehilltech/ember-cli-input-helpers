@@ -15,15 +15,29 @@
  *
  */
 
-import EmberRouter from '@ember/routing/router';
-import config from './config/environment';
+import { computed } from '@ember/object';
+import moment from 'moment';
 
-const Router = EmberRouter.extend({
-  location: config.locationType,
-  rootURL: config.rootURL
-});
+const DEFAULT_DATE_FORMAT = 'YYYY-MM-DD';
 
-Router.map(function() {
-});
+/**
+ * Convert an input with type="date" to and from a JavaScript date object.
+ *
+ * @param dependentKey
+ * @return {*}
+ */
+export default function (dependentKey) {
+  return computed (dependentKey, {
+    get () {
+      const date = this.get (dependentKey);
+      return moment (date).format (DEFAULT_DATE_FORMAT);
+    },
 
-export default Router;
+    set (name, value) {
+      const date = moment (value, [DEFAULT_DATE_FORMAT]);
+      this.set (dependentKey, date.toDate ());
+
+      return value;
+    }
+  });
+}

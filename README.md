@@ -1,26 +1,38 @@
 # ember-cli-input-helpers
 
-This README outlines the details of collaborating on this Ember addon.
+Helper functions for binding HTML input elements to properties.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
-* `cd ember-cli-input-helpers`
-* `npm install`
+    ember install ember-cli-input-helpers
 
-## Running
+## Features
 
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
+* Computed properties for transforming input strings to JavaScript objects
+* Works well with Ember.Data
 
-## Running Tests
+## Usage
 
-* `npm test` (Runs `ember try:each` to test your addon against multiple Ember versions)
-* `ember test`
-* `ember test --server`
+### Date
 
-## Building
+Use the `date` computed property to convert the date input string to/from a
+JavaScript `Date` object.
 
-* `ember build`
+```javascript
+import { date as dateInput } from 'ember-cli-input-helpers/computed';
 
-For more information on using ember-cli, visit [https://ember-cli.com/](https://ember-cli.com/).
+const Person = DS.Model ({
+  // The birthday as a date type.
+  birthday: DS.attr ('date'),
+  
+  // Property specifically for inputs.
+  birthdayInput: dateInput ('birthday')
+});
+```
+
+Then use the `birthdayInput` property in the `{{input}}` helper, and not `birthday`
+property.
+
+```html
+{{input value=model.birthdayInput}}
+```

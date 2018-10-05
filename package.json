@@ -1,12 +1,17 @@
 {
   "name": "ember-cli-input-helpers",
   "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "description": "Helper functions for binding HTML input elements to properties.",
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "input",
+    "helpers",
+    "date",
+    "time",
+    "datetime"
   ],
-  "repository": "",
-  "license": "MIT",
+  "repository": "github:onehilltech/ember-cli-input-helpers",
+  "license": "Apache-2.0",
   "author": "",
   "directories": {
     "doc": "doc",
@@ -25,11 +30,13 @@
     "broccoli-asset-rev": "^2.4.5",
     "ember-ajax": "^3.0.0",
     "ember-cli": "~2.18.2",
+    "ember-cli-blueprint-helpers": "^0.4.1",
     "ember-cli-dependency-checker": "^2.0.0",
     "ember-cli-eslint": "^4.2.1",
     "ember-cli-htmlbars": "^2.0.1",
     "ember-cli-htmlbars-inline-precompile": "^1.0.0",
     "ember-cli-inject-live-reload": "^1.4.1",
+    "ember-cli-moment-shim": "^3.7.1",
     "ember-cli-qunit": "^4.1.1",
     "ember-cli-shims": "^1.2.0",
     "ember-cli-sri": "^2.1.0",
@@ -37,6 +44,7 @@
     "ember-disable-prototype-extensions": "^1.1.2",
     "ember-export-application-global": "^2.0.0",
     "ember-load-initializers": "^1.0.0",
+    "ember-moment": "^7.8.0",
     "ember-resolver": "^4.0.0",
     "ember-source": "~2.18.0",
     "eslint-plugin-ember": "^5.0.0",
