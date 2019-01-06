@@ -30,12 +30,12 @@ export default function (dependentKey) {
   return computed (dependentKey, {
     get () {
       const date = this.get (dependentKey);
-      return moment (date).format (DEFAULT_DATE_FORMAT);
+      return date ? moment (date).format (DEFAULT_DATE_FORMAT) : null;
     },
 
     set (name, value) {
-      const date = moment (value, [DEFAULT_DATE_FORMAT]);
-      this.set (dependentKey, date.toDate ());
+      const date = value ? moment (value, [DEFAULT_DATE_FORMAT]).toDate () : null;
+      this.set (dependentKey, date);
 
       return value;
     }
