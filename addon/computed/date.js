@@ -34,8 +34,29 @@ export default function (dependentKey) {
     },
 
     set (name, value) {
-      const date = value ? moment (value, [DEFAULT_DATE_FORMAT]).toDate () : null;
-      this.set (dependentKey, date);
+      let newDate = moment (value, [DEFAULT_DATE_FORMAT]);
+      let currentDate = moment (this.get (dependentKey));
+
+      if (newDate.isValid ()) {
+        if (currentDate.isValid ()) {
+          // Update only the date (i.e., month, day, year) portion of the date object.
+          const month = newDate.get ('month');
+          const date = newDate.get ('date');
+          const year = newDate.get ('year');
+
+          currentDate.set ({month, date, year});
+        }
+        else {
+          // Replace the current date with the new date.
+          currentDate = newDate;
+        }
+
+        this.set (dependentKey, currentDate.toDate ());
+      }
+      else {
+        // Do not replace the current date.
+        this.set (dependentKey, currentDate.toDate ());
+      }
 
       return value;
     }
