@@ -16,7 +16,9 @@
  */
 
 import date from './date';
+import time from './time';
 
 export {
-  date
+  date,
+  time
 };

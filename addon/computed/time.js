@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2018 One Hill Technologies, LLC
+ * Copyright (c) 2019 One Hill Technologies, LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -18,11 +18,11 @@
 import { computed } from '@ember/object';
 import moment from 'moment';
 
-const DEFAULT_DATE_FORMAT = 'YYYY-MM-DD';
+const DEFAULT_TIME_FORMAT = 'HH:mm';
 
 /**
- * Convert an input with type="date" to and from a JavaScript date object. This helper
- * will preserve the time portion of the existing date, if present.
+ * Convert an input with type="time" to and from a JavaScript date object. This helper
+ * will preserve the date portion of the existing date, if present.
  *
  * @param dependentKey
  * @return {*}
@@ -31,32 +31,33 @@ export default function (dependentKey) {
   return computed (dependentKey, {
     get () {
       const date = this.get (dependentKey);
-      return date ? moment (date).format (DEFAULT_DATE_FORMAT) : null;
+      return date ? moment (date).format (DEFAULT_TIME_FORMAT) : null;
     },
 
     set (name, value) {
-      let newDate = moment (value, [DEFAULT_DATE_FORMAT]);
-      let currentDate = moment (this.get (dependentKey));
+      let newTime = moment (value, [DEFAULT_TIME_FORMAT]);
+      let currentTime = moment (this.get (dependentKey));
 
-      if (newDate.isValid ()) {
-        if (currentDate.isValid ()) {
+      if (newTime.isValid ()) {
+        if (currentTime.isValid ()) {
           // Update only the date (i.e., month, day, year) portion of the date object.
-          const month = newDate.get ('month');
-          const date = newDate.get ('date');
-          const year = newDate.get ('year');
+          const hour = newTime.get ('hour');
+          const second = newTime.get ('second');
+          const minute = newTime.get ('minute');
+          const millisecond = newTime.get ('millisecond');
 
-          currentDate.set ({month, date, year});
+          currentTime.set ({hour, second, minute, millisecond});
         }
         else {
           // Replace the current date with the new date.
-          currentDate = newDate;
+          currentTime = newTime;
         }
 
-        this.set (dependentKey, currentDate.toDate ());
+        this.set (dependentKey, currentTime.toDate ());
       }
       else {
         // Do not replace the current date.
-        this.set (dependentKey, currentDate.toDate ());
+        this.set (dependentKey, currentTime.toDate ());
       }
 
       return value;
