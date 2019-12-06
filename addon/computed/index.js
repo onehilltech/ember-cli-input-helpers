@@ -17,8 +17,10 @@
 
 import date from './date';
 import time from './time';
+import dateTimeLocal from './datetime-local';
 
 export {
   date,
-  time
+  time,
+  dateTimeLocal
 };

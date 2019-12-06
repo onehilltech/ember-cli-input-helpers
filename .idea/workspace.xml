@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="56c159e6-dcb6-4074-bb05-62af793d654d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/addon/computed/time.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/addon/computed/datetime-local.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addon/computed/date.js" beforeDir="false" afterPath="$PROJECT_DIR$/addon/computed/date.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addon/computed/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/addon/computed/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/dummy/app/templates/application.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/tests/dummy/app/templates/application.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/dummy/app/controllers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/dummy/app/controllers/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/dummy/app/templates/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/tests/dummy/app/templates/index.hbs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,7 +26,7 @@
   <component name="ProjectId" id="1Ua4Ci3HDLeYzODLK89PbUkUtFx" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/addon/computed" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="$PROJECT_DIR$/node_modules/eslint" />
@@ -37,6 +36,9 @@
     <property name="settings.editor.selected.configurable" value="template.copyright.formatting" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/addon/computed" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/addon" />
     </key>
@@ -105,7 +107,7 @@
       <updated>1538752895755</updated>
       <workItem from="1538752896923" duration="1970000" />
       <workItem from="1546812760903" duration="3000" />
-      <workItem from="1575581248523" duration="4012000" />
+      <workItem from="1575581248523" duration="5011000" />
     </task>
     <servers />
   </component>
