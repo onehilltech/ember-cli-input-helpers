@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="56c159e6-dcb6-4074-bb05-62af793d654d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/addon/computed/datetime-local.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addon/computed/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/addon/computed/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/dummy/app/controllers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/dummy/app/controllers/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/dummy/app/templates/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/tests/dummy/app/templates/index.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addon/computed/date.js" beforeDir="false" afterPath="$PROJECT_DIR$/addon/computed/date.js" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,6 +20,11 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectId" id="1Ua4Ci3HDLeYzODLK89PbUkUtFx" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/addon/computed" />
@@ -42,18 +43,6 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/addon" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager">
     <configuration name="Run dummy application" type="EMBER_SERVE_CONFIGURATION" factoryName="Ember serve configuration factory">
@@ -107,7 +96,9 @@
       <updated>1538752895755</updated>
       <workItem from="1538752896923" duration="1970000" />
       <workItem from="1546812760903" duration="3000" />
-      <workItem from="1575581248523" duration="5011000" />
+      <workItem from="1575581248523" duration="5211000" />
+      <workItem from="1575597938886" duration="389000" />
+      <workItem from="1586189551480" duration="105000" />
     </task>
     <servers />
   </component>
@@ -119,7 +110,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

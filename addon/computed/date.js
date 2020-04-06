@@ -25,17 +25,20 @@ const DEFAULT_DATE_FORMAT = 'YYYY-MM-DD';
  * will preserve the time portion of the existing date, if present.
  *
  * @param dependentKey
+ * @param format
  * @return {*}
  */
-export default function (dependentKey) {
+export default function (dependentKey, format) {
+  let displayFormat = format || DEFAULT_DATE_FORMAT;
+
   return computed (dependentKey, {
     get () {
       const date = this.get (dependentKey);
-      return date ? moment (date).format (DEFAULT_DATE_FORMAT) : null;
+      return date ? moment (date).format (displayFormat) : null;
     },
 
     set (name, value) {
-      let newDate = moment (value, [DEFAULT_DATE_FORMAT]);
+      let newDate = moment (value, [displayFormat]);
       let currentDate = moment (this.get (dependentKey));
 
       if (newDate.isValid ()) {
