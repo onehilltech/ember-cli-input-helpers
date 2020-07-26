@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="56c159e6-dcb6-4074-bb05-62af793d654d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addon/computed/date.js" beforeDir="false" afterPath="$PROJECT_DIR$/addon/computed/date.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addon/computed/datetime-local.js" beforeDir="false" afterPath="$PROJECT_DIR$/addon/computed/datetime-local.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addon/computed/time.js" beforeDir="false" afterPath="$PROJECT_DIR$/addon/computed/time.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/dummy/app/controllers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/dummy/app/controllers/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/dummy/app/templates/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/tests/dummy/app/templates/index.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/dummy/config/ember-cli-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/dummy/config/targets.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/dummy/config/targets.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +105,7 @@
       <workItem from="1586189551480" duration="570000" />
       <workItem from="1586190169519" duration="429000" />
       <workItem from="1586534702282" duration="1169000" />
-      <workItem from="1595779795305" duration="548000" />
+      <workItem from="1595779795305" duration="1658000" />
     </task>
     <servers />
   </component>
@@ -120,6 +123,24 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1659" height="366" key="GridCell.Tab.0.bottom" timestamp="1595781434838">
+      <screen x="0" y="23" width="1680" height="955" />
+    </state>
+    <state width="1659" height="366" key="GridCell.Tab.0.bottom/0.23.1680.955@0.23.1680.955" timestamp="1595781434838" />
+    <state width="1659" height="366" key="GridCell.Tab.0.center" timestamp="1595781434838">
+      <screen x="0" y="23" width="1680" height="955" />
+    </state>
+    <state width="1659" height="366" key="GridCell.Tab.0.center/0.23.1680.955@0.23.1680.955" timestamp="1595781434838" />
+    <state width="1659" height="366" key="GridCell.Tab.0.left" timestamp="1595781434837">
+      <screen x="0" y="23" width="1680" height="955" />
+    </state>
+    <state width="1659" height="366" key="GridCell.Tab.0.left/0.23.1680.955@0.23.1680.955" timestamp="1595781434837" />
+    <state width="1659" height="366" key="GridCell.Tab.0.right" timestamp="1595781434838">
+      <screen x="0" y="23" width="1680" height="955" />
+    </state>
+    <state width="1659" height="366" key="GridCell.Tab.0.right/0.23.1680.955@0.23.1680.955" timestamp="1595781434838" />
   </component>
   <component name="masterDetails">
     <states>

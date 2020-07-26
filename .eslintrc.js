@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /*
  * Copyright (c) 2018 One Hill Technologies, LLC
  *
@@ -15,9 +14,8 @@
  * limitations under the License.
  *
  */
-=======
+
 'use strict';
->>>>>>> a8f3c1a... v2.18.2...v3.16.2
 
 module.exports = {
   root: true,
