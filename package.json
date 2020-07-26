@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-input-helpers",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Helper functions for binding HTML input elements to properties.",
   "keywords": [
     "ember-addon",
