@@ -15,7 +15,7 @@
  *
  */
 
-import { computed } from '@ember/object';
+import { computed, get, set } from '@ember/object';
 import moment from 'moment';
 
 const DEFAULT_DATE_FORMAT = 'YYYY-MM-DD';
@@ -33,13 +33,13 @@ export default function (dependentKey, format) {
 
   return computed (dependentKey, {
     get () {
-      const date = this.get (dependentKey);
+      const date = get (this, dependentKey);
       return date ? moment (date).format (displayFormat) : null;
     },
 
     set (name, value) {
       let newDate = moment (value, [displayFormat]);
-      let currentDate = moment (this.get (dependentKey));
+      let currentDate = moment (get (this, dependentKey));
 
       if (newDate.isValid ()) {
         if (currentDate.isValid ()) {
@@ -55,11 +55,11 @@ export default function (dependentKey, format) {
           currentDate = newDate;
         }
 
-        this.set (dependentKey, currentDate.toDate ());
+        set (this, dependentKey, currentDate.toDate ());
       }
       else {
         // Do not replace the current date.
-        this.set (dependentKey, currentDate.toDate ());
+        set (this, dependentKey, currentDate.toDate ());
       }
 
       return value;

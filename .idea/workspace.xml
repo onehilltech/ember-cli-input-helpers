@@ -4,6 +4,8 @@
     <list default="true" id="56c159e6-dcb6-4074-bb05-62af793d654d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addon/computed/date.js" beforeDir="false" afterPath="$PROJECT_DIR$/addon/computed/date.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addon/computed/datetime-local.js" beforeDir="false" afterPath="$PROJECT_DIR$/addon/computed/datetime-local.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addon/computed/time.js" beforeDir="false" afterPath="$PROJECT_DIR$/addon/computed/time.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +24,6 @@
   <component name="ProjectId" id="1Ua4Ci3HDLeYzODLK89PbUkUtFx" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -98,25 +99,27 @@
       <workItem from="1546812760903" duration="3000" />
       <workItem from="1575581248523" duration="5211000" />
       <workItem from="1575597938886" duration="389000" />
-      <workItem from="1586189551480" duration="105000" />
+      <workItem from="1586189551480" duration="570000" />
+      <workItem from="1586190169519" duration="429000" />
+      <workItem from="1586534702282" duration="1169000" />
+      <workItem from="1595779795305" duration="548000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="masterDetails">
     <states>

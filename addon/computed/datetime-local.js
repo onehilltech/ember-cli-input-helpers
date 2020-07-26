@@ -15,7 +15,7 @@
  *
  */
 
-import { computed } from '@ember/object';
+import { computed, get, set } from '@ember/object';
 import moment from 'moment';
 
 const DEFAULT_DATETIME_LOCAL_FORMAT = 'YYYY-MM-DDTHH:mm';
@@ -30,13 +30,13 @@ const DEFAULT_DATETIME_LOCAL_FORMAT = 'YYYY-MM-DDTHH:mm';
 export default function (dependentKey) {
   return computed (dependentKey, {
     get () {
-      const date = this.get (dependentKey);
+      const date = get (this, dependentKey);
       return date ? moment (date).format (DEFAULT_DATETIME_LOCAL_FORMAT) : null;
     },
 
     set (name, value) {
       let newDate = moment (value, [DEFAULT_DATETIME_LOCAL_FORMAT]);
-      let currentDate = moment (this.get (dependentKey));
+      let currentDate = moment (get (this, dependentKey));
 
       if (newDate.isValid ()) {
         if (currentDate.isValid ()) {
@@ -55,11 +55,11 @@ export default function (dependentKey) {
           currentDate = newDate;
         }
 
-        this.set (dependentKey, currentDate.toDate ());
+        set (this, dependentKey, currentDate.toDate ());
       }
       else {
         // Do not replace the current date.
-        this.set (dependentKey, currentDate.toDate ());
+        set (this, dependentKey, currentDate.toDate ());
       }
 
       return value;

@@ -15,7 +15,7 @@
  *
  */
 
-import { computed } from '@ember/object';
+import { computed, get, set } from '@ember/object';
 import moment from 'moment';
 
 const DEFAULT_TIME_FORMAT = 'HH:mm';
@@ -30,13 +30,13 @@ const DEFAULT_TIME_FORMAT = 'HH:mm';
 export default function (dependentKey) {
   return computed (dependentKey, {
     get () {
-      const date = this.get (dependentKey);
+      const date = get (this, dependentKey);
       return date ? moment (date).format (DEFAULT_TIME_FORMAT) : null;
     },
 
     set (name, value) {
       let newTime = moment (value, [DEFAULT_TIME_FORMAT]);
-      let currentTime = moment (this.get (dependentKey));
+      let currentTime = moment (get (this, dependentKey));
 
       if (newTime.isValid ()) {
         if (currentTime.isValid ()) {
@@ -53,11 +53,11 @@ export default function (dependentKey) {
           currentTime = newTime;
         }
 
-        this.set (dependentKey, currentTime.toDate ());
+        set (this, dependentKey, currentTime.toDate ());
       }
       else {
         // Do not replace the current date.
-        this.set (dependentKey, currentTime.toDate ());
+        set (this, dependentKey, currentTime.toDate ());
       }
 
       return value;
