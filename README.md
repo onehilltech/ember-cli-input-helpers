@@ -1,9 +1,14 @@
-# ember-cli-input-helpers
+ember-cli-input-helpers
+==============================================================================
 
+<<<<<<< HEAD
 Helper functions for binding HTML input elements to properties.
+=======
+[Short description of the addon.]
+>>>>>>> a8f3c1a... v2.18.2...v3.16.2
 
-## Installation
 
+<<<<<<< HEAD
     ember install ember-cli-input-helpers
 
 ## Features
@@ -36,3 +41,37 @@ property.
 ```html
 {{input value=model.birthdayInput}}
 ```
+=======
+Compatibility
+------------------------------------------------------------------------------
+
+* Ember.js v3.12 or above
+* Ember CLI v2.13 or above
+* Node.js v10 or above
+
+
+Installation
+------------------------------------------------------------------------------
+
+```
+ember install ember-cli-input-helpers
+```
+
+
+Usage
+------------------------------------------------------------------------------
+
+[Longer description of how to use the addon in apps.]
+
+
+Contributing
+------------------------------------------------------------------------------
+
+See the [Contributing](CONTRIBUTING.md) guide for details.
+
+
+License
+------------------------------------------------------------------------------
+
+This project is licensed under the [MIT License](LICENSE.md).
+>>>>>>> a8f3c1a... v2.18.2...v3.16.2

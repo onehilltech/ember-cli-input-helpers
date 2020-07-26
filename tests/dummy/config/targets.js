@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*
  * Copyright (c) 2018 One Hill Technologies, LLC
  *
@@ -14,12 +15,23 @@
  * limitations under the License.
  *
  */
+=======
+'use strict';
+
+const browsers = [
+  'last 1 Chrome versions',
+  'last 1 Firefox versions',
+  'last 1 Safari versions'
+];
+
+const isCI = !!process.env.CI;
+const isProduction = process.env.EMBER_ENV === 'production';
+
+if (isCI || isProduction) {
+  browsers.push('ie 11');
+}
+>>>>>>> a8f3c1a... v2.18.2...v3.16.2
 
 module.exports = {
-  browsers: [
-    'ie 9',
-    'last 1 Chrome versions',
-    'last 1 Firefox versions',
-    'last 1 Safari versions'
-  ]
+  browsers
 };
