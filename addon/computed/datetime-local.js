@@ -59,7 +59,7 @@ export default function (dependentKey) {
       }
       else {
         // Do not replace the current date.
-        set (this, dependentKey, currentDate.toDate ());
+        set (this, dependentKey, null);
       }
 
       return value;
