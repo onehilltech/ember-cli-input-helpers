@@ -3,14 +3,14 @@ ember-cli-input-helpers
 
 Helper functions for binding HTML input elements to properties.
 
+## Install
+
+    ember install ember-cli-input-helpers
+
 ## Features
 
 * Computed properties for transforming input strings to JavaScript objects
 * Works well with Ember.Data
-
-## Installation
-
-    ember install ember-cli-input-helpers
 
 ## Usage
 
