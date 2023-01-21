@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="56c159e6-dcb6-4074-bb05-62af793d654d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +47,24 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="EMBER_SERVE_CONFIGURATION" factoryName="Ember serve configuration factory">
+      <option name="PORT" value="" />
+      <option name="HOST" value="" />
+      <option name="ENVIRONMENT" value="development" />
+      <option name="OUTPUT_PATH" value="" />
+      <option name="WATCHER" value="" />
+      <option name="PROXY" value="" />
+      <option name="PROXY_SECURE" value="true" />
+      <option name="PROXY_TRANSPARENT" value="true" />
+      <option name="LIVE_RELOAD" value="true" />
+      <option name="LIVE_RELOAD_HOST" value="" />
+      <option name="LIVE_RELOAD_BASE_URL" value="" />
+      <option name="LIVE_RELOAD_PORT" value="" />
+      <option name="SSL" value="false" />
+      <option name="SSL_KEY" value="" />
+      <option name="SSL_CERT" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Run dummy application" type="EMBER_SERVE_CONFIGURATION" factoryName="Ember serve configuration factory">
       <option name="PORT" value="" />
       <option name="HOST" value="" />
@@ -64,24 +83,6 @@
       <option name="SSL_CERT" value="" />
       <module name="NAME" value="ember-cli-input-helpers" />
       <node-interpreter value="project" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="EMBER_SERVE_CONFIGURATION" factoryName="Ember serve configuration factory">
-      <option name="PORT" value="" />
-      <option name="HOST" value="" />
-      <option name="ENVIRONMENT" value="development" />
-      <option name="OUTPUT_PATH" value="" />
-      <option name="WATCHER" value="" />
-      <option name="PROXY" value="" />
-      <option name="PROXY_SECURE" value="true" />
-      <option name="PROXY_TRANSPARENT" value="true" />
-      <option name="LIVE_RELOAD" value="true" />
-      <option name="LIVE_RELOAD_HOST" value="" />
-      <option name="LIVE_RELOAD_BASE_URL" value="" />
-      <option name="LIVE_RELOAD_PORT" value="" />
-      <option name="SSL" value="false" />
-      <option name="SSL_KEY" value="" />
-      <option name="SSL_CERT" value="" />
       <method v="2" />
     </configuration>
   </component>
@@ -106,6 +107,9 @@
       <workItem from="1595779795305" duration="1730000" />
       <workItem from="1597286518394" duration="774000" />
       <workItem from="1610980590881" duration="771000" />
+      <workItem from="1616336622136" duration="633000" />
+      <workItem from="1641259073881" duration="13000" />
+      <workItem from="1674270919824" duration="12000" />
     </task>
     <servers />
   </component>
